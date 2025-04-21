@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: azure;
+    /* display: flex;
+    flex-direction: column;
+    text-align: center; */
+}
+.container{
+   padding-top: 180px;
+    text-align: center;
+}
+
+.container > h1{
+    font-size: 40px;
+}
+.container > p{
+ font-size: 20px;   
+}
+
+.container > p > strong{
+    background-color: rgb(255, 130, 130);
+     
+}
+#num{
+  width: 200px;
+
+}
+#butt{
+    width: 90px;
+    background-color: blue;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px ;
+}

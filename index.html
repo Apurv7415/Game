@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Gussing Game </title>
+</head>
+<body>
+   <div class="container">
+    <h1>Welcome to Number Gussing Game Mr. <strong id="name" style="color: orange;">Vaibhav Sharma</strong> </h1>
+    <P>Game is Simple as its name You Have to just Guss the Number and <strong>Win</strong> The Price</P>
+    <p><b>Please Choose Number Between 1 to 2</b></p>
+    <input type="number" name=""  placeholder="Guss the Number" id="num">
+    <button id="butt">Gusse</button>
+    <p id="answer">Correct Answer : </p>
+    <P><br>--------Apurv Sharma--------</P>
+   </div> 
+<script>
+
+    var  user=prompt("Enter Your Name");
+    document.getElementById("name").innerHTML=user;
+    
+    var number=0;
+    document.getElementById("butt").onclick=function(){
+         number=document.getElementById("num").value;
+         var answer=Math.floor(Math.random()*2)+1;
+
+    if(answer==number){
+        // alert("You Win");
+        document.getElementById("answer").innerHTML="<h1>You Win</h1>"+"Correct Answer :"+ answer;
+    }
+    else if (number<1 || number>2 ) {
+        // alert("Invalid number");
+        document.getElementById("answer").innerHTML="<h1>Invalid number</h1>"+"Correct Answer :"+ answer;
+        
+    }    
+    else{
+        // alert("You Lose");
+        document.getElementById("answer").innerHTML="<h1>You Lose</h1>"+"Correct Answer :"+ answer;
+    }
+    // document.getElementById("answer").innerHTML="Correct Answer : "+answer;
+    }
+    
+</script>
+
+
+</body>
+</html>
